@@ -377,9 +377,9 @@ footer{
   display: flex;
   align-items: center;
 }
-.footer-logo{
-  /* margin: 77px 0 76px 0px; */
-}
+/* .footer-logo{
+  /* margin: 77px 0 76px 0px; 
+} */
 /* right */
 .footer-right{
   display: flex;
