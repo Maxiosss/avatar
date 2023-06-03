@@ -18,6 +18,7 @@ line-height: 24px;
 }
 blockquote{
   font-family: 'Inter';
+  text-align: center;
 font-size: 36px;
 line-height: 44px;
 color: #0A3853;
@@ -221,6 +222,7 @@ margin-top: 42px;
 .hero-arrow{
   width: 152px;
   height: 40px;
+  margin-left: 53px;
 }
 .programs{
   display: flex;
@@ -248,15 +250,8 @@ margin-top: 42px;
 /* end of hero */
 /* bottom-hero */
 .bottom-hero{
+  padding-top: 75px;
   background-color: #FFFFFF;
-}
-.quote-1{
-  width: 724px;
-  margin: 75px 358px 4px 358px;
-}
-.quote-2{
-  width: 1022px;
-  margin: 4px 219px 16px 219px;
 }
 .bottom-hero img{
   margin: 8px 521px 10px 521px;
@@ -282,15 +277,8 @@ border-radius: 45px 0px;
 }
 /* bottom-main */
 .bottom-main-2{
+  padding-top: 75px;
   background-color: #FFFFFF;
-}
-.quote-3{
-  width: 886px;
-  margin: 75px 279px 4px 277px;
-}
-.quote-4{
-  width: 528px;
-  margin: 4px 446px 16px 468px;
 }
 .bottom-main-2 img{
   margin: 8px 521px 10px 521px;
@@ -350,17 +338,8 @@ color: #141414;
 }
 /* bottom-main-3 */
 .bottom-main-3{
+  padding-top: 75px;
   background-color: #FFFFFF;
-}
-.quote-5{
-  width: 940px;
-  height: 44px;
-  margin: 75px 222px 4px 276px;
-}
-.quote-6{
-  width: 812px;
-  height: 44px;
-  margin: 4px 286px 16px 340px;
 }
 .bottom-main-3 img{
   margin: 8px 521px 10px 521px;
