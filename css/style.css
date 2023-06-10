@@ -54,8 +54,11 @@ body{
 }
 /* header */
 .header{
-  padding: 39px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1440px;
+  padding: 39px 49px 39px 204px;
   background-image: linear-gradient(rgba(43, 74, 97, 0.87),rgba(43, 74, 97, 0.87)),url("../backimg/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +67,6 @@ body{
 }
 .header-wrapper {
   width: 1032px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +80,8 @@ body{
   font-size: 20px;
   line-height: 24px;
 }
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a:focus {
   color:  #94cfff;
   font-weight: 600;
 }
@@ -90,7 +93,6 @@ body{
   font-family: 'Hammersmith One';
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 100px;
 }
 .header-btn{
   width: 141px;
@@ -112,7 +114,6 @@ border-radius: 35px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 1271px;  
   width: 121px;
   height: 34px;
 }
@@ -123,7 +124,6 @@ border-radius: 35px 0px;
   display: inline-block;
   width: 36px;
   height: 20px;
-  margin-bottom: 100px;
 }
 
 .switch input {
@@ -189,8 +189,6 @@ border-radius: 35px 0px;
   padding: 180px 0;
 }
 .text-hero-1{
-  width: 298px;
-  height: 96px;
   font-family: 'Inter';
 font-size: 20px;
 line-height: 24px;
@@ -223,8 +221,6 @@ border-radius: 45px 0px;
 margin-top: 42px;
 }
 .hero-arrow{
-  width: 152px;
-  height: 40px;
   margin-left: 53px;
 }
 .programs{
@@ -235,6 +231,11 @@ margin-top: 42px;
   align-self: center;
   width: 50px;
   height: 141px;
+}
+.programs a:hover,
+.programs a:focus {
+  color:  #94cfff;
+  font-weight: 600;
 }
 .instagram{
   width: 30px;
@@ -266,9 +267,9 @@ margin-top: 42px;
   background-image:url("../backimg/secondmain.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 330px 590px 330px 591px;
 }
 .treiler-btn{
-  margin: 330px 590px 330px 591px;
   width: 260px;
 height: 80px;
 font-size: 24px;
@@ -369,7 +370,6 @@ footer {
 .footer-wrapper {
   display: flex;
   width: 1032px;
-  margin: 0 auto;
 }
 
 .footer-left {
