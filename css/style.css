@@ -106,206 +106,6 @@ border: 2px solid #26C7EA;
 padding: 9px 38px 8px 38px;
 border-radius: 35px 0px;
 }
-#modal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#modal .overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #000000;
-  opacity: 0.05;
-  z-index: 0;
-}
-#modal:not(:target) {
-  visibility: hidden;
-  opacity: 0;
-}
-.modal-window{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  width: 280px;
-  height: 280px;
-  border-radius: 20px;
-  box-shadow: 0 10px 15px rgba(0,0,0.5);
-  padding: 10px;
-  background: #FFFFFF;
-}
-.btn-close {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  border: none;
-  background: none;
-  opacity: 0.7;
-  color: #000000;
-}
-.btn-close:hover{
-  opacity: 1;
-}
-.login-card {
-  width: 250px;
-  height: 240px;
-  background-color: #f2f2f2;
-  border-radius: 25px;
-  box-shadow: 2px 2px 15px rgb(193, 193, 193);
-}
-
-.instruction-text {
-  color: rgb(150, 150, 150);
-  text-align: center;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.login-card button {
-  cursor: pointer;
-}
-
-.normal-signin {
-  padding: 10px;
-  font-size: 17px;
-  width: 70%;
-  margin-top: 25px;
-  margin-left: 37px;
-  border: 2px solid transparent;
-  border-radius: 5em;
-  background-color: #1b77da;
-  color: #f2f2f2;
-  font-weight: bold;
-  font-family: sans-serif;
-  transition: 0.2s;
-}
-.normal-signin:hover {
-  background-color: transparent;
-  color: #1b77da;
-  border: 2px solid #1b77da;
-}
-.create-account {
-  padding: 10px;
-  font-size: 17px;
-  width: 70%;
-  margin-top: 5px;
-  margin-left: 37px;
-  margin-bottom: 5px;
-  border: 2px solid transparent;
-  border-radius: 5em;
-  background-color: #e8e8e8;
-  color: #1b77da;
-  font-weight: bold;
-  font-family: sans-serif;
-  transition: 0.2s;
-}
-.create-account:hover {
-  background-color: transparent;
-  color: #1b77da;
-  border: 2px solid #1b77da;
-}
-.alternate-login {
-  margin-left: 42px;
-  margin-top: 5px;
-  background-color: #f2f2f2;
-  border-radius: 5em;
-}
-.m-sign {
-  padding: 7px;
-  font-size: 14px;
-  height: 40px;
-  width: 40px;
-  border-radius: 5em;
-  margin-top: 5px;
-  background-color: #7FBA00;
-  border: 2px solid transparent;
-  transition: 0.2s;
-}
-.m-sign svg {
-  width: 27px;
-  height: 27px;
-  margin-top: -2px;
-  margin-left: -2px;
-  fill: #f2f2f2;
-}
-
-.m-sign:hover {
-  background-color: transparent;
-  border: 2px solid #7FBA00;
-}
-
-.m-sign:hover svg {
-  fill: #7FBA00;
-}
-
-.g-sign {
-  padding: 7px;
-  font-size: 14px;
-  height: 40px;
-  width: 40px;
-  border-radius: 5em;
-  margin-top: 5px;
-  margin-left: 15px;
-  background-color: #DB4437;
-  border: 2px solid transparent;
-  transition: 0.2s;
-}
-
-.g-sign svg {
-  width: 23px;
-  height: 25px;
-  margin-top: -1.5px;
-  fill: #f2f2f2;
-}
-
-.g-sign:hover {
-  background-color: transparent;
-  border: 2px solid #DB4437;
-}
-
-.g-sign:hover svg {
-  fill: #DB4437;
-}
-
-.a-sign {
-  padding: 7px;
-  font-size: 14px;
-  height: 40px;
-  width: 40px;
-  border-radius: 5em;
-  margin-top: 5px;
-  margin-left: 15px;
-  background-color: #000000;
-  border: 2px solid transparent;
-  transition: 0.2s;
-}
-
-.a-sign svg {
-  width: 25px;
-  height: 25px;
-  margin-top: -1px;
-  margin-left: -1px;
-  fill: #f2f2f2;
-}
-
-.a-sign:hover {
-  background-color: transparent;
-  border: 2px solid #000000;
-}
-
-.a-sign:hover svg {
-  fill: #000000;
-}
-/* end-of header-button */
 .nav-menu{
   margin-left: 168px;
   margin-right: 212px;
@@ -616,4 +416,149 @@ footer {
   color: #ffffff;
   margin-left: 131px;
 }
+/* modal */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-form{
+  position: fixed;
+  background-image: url(../backimg/modal-second.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  padding: 111px 80px 23px;
+    z-index: 100;
 
+}
+.close-btn{
+  position: absolute;
+  background: transparent;
+  border: none;
+  top: 16px;
+  right: 16px;
+}
+.close-svg{
+  fill: #0B0E66;
+}
+.modal-list{
+  margin-bottom: 40px;
+}
+.modal-label{
+  display: flex;
+  flex-direction: column;
+  color: #0B0E66;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+line-height: normal;
+}
+.modal-input{
+  border: 2px solid #0B0E66;
+background: #FFF;
+}
+.modal-input:nth-child(1){
+  margin-bottom: 12px;
+}
+.join-btn{
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+height: 80px;
+  border-radius: 45px 0px;
+border: 3px solid #26C7EA;
+background: #0B0E66;
+color: #26C7EA;
+text-align: center;
+font-size: 24px;
+font-weight: 400;
+line-height: normal;
+}
+/* secon-modal */
+.info-modal{
+  width: 600px;
+  padding: 51px 112px 172px;
+  position: fixed;
+  background-image: url(../backimg/modal-first.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+.gratulation-info{
+  color: #FFF;
+text-align: center;
+font-size: 24px;
+line-height: normal;
+font-weight: 400;
+margin-bottom: 80px;
+}
+.close-svg-info{
+  fill: #FFF;
+}
+.banshi{
+  color: #FFF;
+text-align: center;
+font-size: 24px;
+font-weight: 400;
+line-height: normal;
+}
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+/* treiler-modal */
+.modal-form-treiler{
+  position: fixed;
+  background-image: url(../backimg/modal-treiler.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+    z-index: 100;
+    padding: 70px 50px;
+}
+.telegram-icon{
+  width: 24px;
+  height: 24px;
+  fill: #75e5fe;
+}
+.telegram-btn{
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+height: 80px;
+  border-radius: 45px 0px;
+border: 3px solid #26C7EA;
+background: #0B0E66;
+color: #26C7EA;
+text-align: center;
+font-size: 24px;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 10px;
+}
+.close-t-svg{
+  fill: #FFF;
+}
+.close-t-svg:hover{
+  fill:  red;
+  cursor: pointer;
+}
+.click{
+  color: gold;
+text-align: center;
+font-size: 24px;
+font-weight: 500;
+line-height: normal;
+}
